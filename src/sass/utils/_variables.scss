@@ -1,0 +1,31 @@
+:root {
+  // fonts
+  --main-font: Roboto, sans-serif;
+
+  // text colors
+  --main-text-color: #2c2c2c;
+  --placeholder-color: #505050;
+
+  // base colors
+  --black-color: #000000;
+  --white-color: #ffffff;
+
+  // background colors
+  --bgc-white: #fefefe;
+  --box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  --bgc-shadow: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+
+  // accent-colors
+  --yellow-main: #ffe550;
+  --button-green: #bbf330;
+  --button-green-bright: #b5ff00;
+  --dark-green: #7eb101;
+  --invalid-red: #ff705d;
+
+  // transition
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

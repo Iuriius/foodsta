@@ -1,0 +1,63 @@
+.swiper {
+    display: flex;
+}
+
+.swiper__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        left: 539px;
+        top: 165px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 685px;
+        top: 370px;
+    }
+}
+
+// Cховав кнопки, так як слайдер не працює
+
+.swiper__button-right {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    left: 395px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 1220px;
+        top: 370px;
+    }
+}
+
+.swiper__button-left {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    left: 695px;
+    top: 400px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 655px;
+        top: 370px;
+    }
+}

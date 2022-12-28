@@ -1,0 +1,91 @@
+<header class="header section" id="home">
+  <div class="container header__container" data-header>
+    <!-- Логотип -->
+    <a class="foodsta-logo" href="./index.html">
+      <svg class="logo__image" width="71" height="52">
+        <use href="./images/icons/sprite.svg#logo"></use>
+      </svg>
+    </a>
+
+    <!-- Кнопка мобильного меню -->
+    <button
+      class="menu-button js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-button
+    >
+      <svg
+        class="menu-button__icon--menu"
+        width="28"
+        height="28"
+        aria-label="Mobile menu switch"
+      >
+        <use href="./images/icons/sprite.svg#burger-menu"></use>
+      </svg>
+    </button>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
+      <button
+        class="menu-button js-close-menu btn"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg
+          class="menu-button__icon--cross"
+          width="28"
+          height="28"
+          aria-label="Mobile menu switch"
+        >
+          <use href="./images/icons/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link first-item" href="#home">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#about">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#home">Service</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#menu">Menu</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link last-item" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Меню навигации -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link current-page" href="#">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#home">Service</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#menu">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Кнопка заказа -->
+    <button class="order-button" type="button" data-modal-open-header>
+      Order Now
+    </button>
+  </div>
+</header>

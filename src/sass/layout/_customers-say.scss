@@ -1,0 +1,107 @@
+.customers {
+  background-image: url('../images/icons/customers-background-mob.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/icons/customers-background-mob-480.svg');
+    background-position: bottom;
+    background-size: 100%;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 767px) {
+    padding-bottom: 65px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-image: url('../images/icons/customers-background-tab.svg'),
+      url('../images/icons/customers-background-tab.svg');
+    background-size: 100%, 100%;
+    background-position: 0 -400px, bottom;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+    padding-bottom: 160px;
+    background-image: url('../images/icons/customers-background-desc.svg');
+    background-size: 100%;
+    background-position: bottom;
+  }
+}
+
+.customer__title-box {
+  margin-bottom: 32px;
+}
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 139px;
+    justify-content: flex-start;
+  }
+}
+
+.customers__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 52px 8px 8px 8px;
+  max-width: 440px;
+
+  background-image: url('../images/icons/stars.svg'),
+    url('../images/icons/feedback-bacground.svg'),
+    url('../images/icons/feedback-bacground.svg'),
+    url('../images/icons/feedback-bacground.svg');
+  background-size: 101px 16px, contain, contain, contain;
+  background-repeat: no-repeat;
+  background-position: 8px 8px, right, bottom, left;
+
+  @media screen and (min-width: 768px) {
+    padding: 56px 12px 12px 12px;
+    width: calc((100% - 32px) / 2);
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 58px 14px 14px 14px;
+    max-width: 501px;
+  }
+}
+
+.customers__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.17;
+  margin-bottom: 42px;
+  max-height: 84px;
+}
+
+.customers__box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-width: 160px;
+  gap: 16px;
+  border-right: 0.85px solid var(--dark-green);
+}
+
+.customer__information {
+  padding-right: 16px;
+}
+.customers__name {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.customers__job {
+  font-size: 14px;
+  line-height: 1.5;
+}

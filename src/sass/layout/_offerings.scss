@@ -1,0 +1,188 @@
+.offerings {
+  background-image: url('../images/offerings/yellow-bg-mob-320.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/offerings/yellow-bg-mob-480.svg');
+    background-size: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/offerings/yellow-bg-tabl.svg');
+    background-size: 100%;
+    // margin-top: -33px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/offerings/yellow-bg-desk.svg');
+    background-size: 100%;
+    padding-bottom: 0;
+    margin-top: 4;
+  }
+}
+
+.offerings__container {
+  background-image: url('../images/offerings/apple-sm@1x.png'),
+    url('../images/offerings/apple-shadow-sm@1x.png'),
+    url('../images/offerings/apple-sm-ellipse-bg.svg'),
+    url('../images/offerings/apple-sm-ellipse-border.svg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/offerings/apple-sm@2x.png'),
+      url('../images/offerings/apple-shadow-sm@2x.png'),
+      url('../images/offerings/apple-sm-ellipse-bg.svg'),
+      url('../images/offerings/apple-sm-ellipse-border.svg');
+  }
+
+  background-size: 201px, 128px, 255px, 280px;
+  background-repeat: no-repeat;
+  background-position: center -19px, center 207px, center 22px, center 10px;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/offerings/apples-tablet@_1x.png'),
+      url('../images/offerings/apples-fon-tablet.svg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/apples-tablet@_2x.png'),
+        url('../images/offerings/apples-fon-tablet.svg');
+    }
+
+    background-size: 651px 363px, 596px 357px;
+    background-repeat: no-repeat;
+    background-position: 86px 50px, 32px 87px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/offerings/apple-lg@1x.png'),
+      url('../images/offerings/apple-shadow-lg@1x.png'),
+      url('../images/offerings/apple-lg-ellipse-bg.svg'),
+      url('../images/offerings/apple-lg-ellipse-border.svg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/offerings/apple-lg@2x.png'),
+        url('../images/offerings/apple-shadow-lg@2x.png'),
+        url('../images/offerings/apple-lg-ellipse-bg.svg'),
+        url('../images/offerings/apple-lg-ellipse-border.svg');
+    }
+
+    background-size: 396px, 252px, 502px, 550px;
+    background-repeat: no-repeat;
+    background-position: 100px 77px, 171px 519px, 40px 155px, 16px 131px;
+    padding-bottom: 100px;
+  }
+}
+
+.offerings__thumb {
+  padding-top: 350px;
+  margin-bottom: 28px;
+  align-items: flex-start;
+
+  @media screen and (min-width: 768px) {
+    width: 526px;
+    padding-top: 504px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 526px;
+    padding-top: 173px;
+    margin-left: 656px;
+  }
+}
+
+.offerings__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 656px;
+    gap: 67px;
+  }
+}
+
+.offerings__icon-rocket {
+  width: 48px;
+  height: 48px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  background-image: url('../images/offerings/rocket.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offerings__icon-click {
+  width: 48px;
+  height: 48px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  background-image: url('../images/offerings/click.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offerings__subtitle {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 1280px) {
+    line-height: 140%;
+  }
+}
+
+.offerings__text {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 768px) {
+    width: 252px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 150%;
+    margin-bottom: 32px;
+  }
+}
+
+.offerings__order-cont {
+  @media screen and (min-width: 1280px) {
+    margin-left: 656px;
+  }
+}
+
+.offerings__link {
+  margin-left: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.offerings__read-more {
+  background-image: url('../images/offerings/read-more.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 10px;
+}

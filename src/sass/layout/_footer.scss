@@ -1,0 +1,198 @@
+.footer {
+  box-shadow: var(--box-shadow);
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/footer/mobile-left@_1x.png'),
+      url('../images/footer/mobile-center@_1x.png'),
+      url('../images/footer/mobile-right@_1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/footer/mobile-left@_2x.png'),
+        url('../images/footer/mobile-center@_2x.png'),
+        url('../images/footer/mobile-right@_2x.png');
+    }
+
+    background-size: 110px, 253px, 104px;
+    background-repeat: no-repeat;
+    background-position: left 132px, 63% bottom, right top;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/footer/tablet-left@_1x.png'),
+      url('../images/footer/tablet-center@_1x.png'),
+      url('../images/footer/tablet-right@_1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/footer/tablet-left@_2x.png'),
+        url('../images/footer/tablet-center@_2x.png'),
+        url('../images/footer/tablet-right@_2x.png');
+    }
+
+    background-size: 167px, 538px, 203px;
+    background-repeat: no-repeat;
+    background-position: left bottom, left 58% bottom, right bottom;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/footer/desktop-center@_1x.png'),
+      url('../images/footer/desktop-left@_1x.png'),
+      url('../images/footer/desktop-right@_1x.png');
+
+    background-size: 930px 266px, 196px 62px, 181px 73px;
+    background-repeat: no-repeat;
+    background-position: 61% bottom, left 55px bottom, right 20px bottom;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/footer/desktop-center@_2x.png'),
+        url('../images/footer/desktop-left@_2x.png'),
+        url('../images/footer/desktop-right@_2x.png');
+
+      background-size: 930px 266px, 196px 62px, 181px 73px;
+      background-repeat: no-repeat;
+      background-position: center bottom, left bottom, right bottom;
+    }
+  }
+}
+
+.footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+    height: 110px;
+  }
+}
+
+.policy {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      gap: 20px;
+    }
+  }
+
+  &__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    text-decoration-line: underline;
+    color: var(--dark-green);
+
+    transition: color var(--transition);
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--button-green);
+    }
+  }
+
+  .copyright {
+    font-size: 10px;
+    line-height: calc(12 / 10);
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
+  }
+}
+
+.footer__top {
+  .nav {
+    display: flex;
+    position: relative;
+    top: -6px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      top: -14px;
+      left: -160px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: -695px;
+    }
+  }
+
+  .nav__list {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      gap: 0;
+      flex-direction: column;
+      margin-right: 81px;
+    }
+  }
+
+  .nav__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.footer__top {
+  .subscribe__label {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  @media screen and (min-width: 768px) {
+    .subscribe__form {
+      display: flex;
+      flex-wrap: wrap;
+
+      .subscribe__input {
+        display: flex;
+        width: 279px;
+        margin-right: 13px;
+      }
+    }
+  }
+}
+
+.footer__container {
+  position: relative;
+
+  @media screen and (min-width: 1280px) {
+    .subscribe__thumb {
+      position: absolute;
+      top: 0;
+      right: -45px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+<footer class="section footer">
+  <div class="container footer__container">
+    <div class="footer__top">
+      <a class="foodsta-logo" href="">
+        <svg class="logo__image" width="69" height="51">
+          <use href="./images/icons/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link current-page" href="#home">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#home">Service</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#menu">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="subscribe__thumb">
+        <form class="subscribe__form">
+          <label class="subscribe__label" for="user-email">Subscribe</label>
+          <div class="subscribe__box">
+            <input
+              class="subscribe__input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Enter your email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              title="Not a valid email address (example@email.com)"
+            />
+            <div class="subscribe__warning-box">
+              <svg class="subscribe__warning" width="11" height="11">
+                <use href="./images/icons/sprite.svg#icon-warning"></use>
+              </svg>
+              <span class="subscribe__warning-text">
+                Not a valid email address (example@email.com)
+              </span>
+            </div>
+          </div>
+          <button
+            class="subscribe__button subscribe__button--white"
+            type="submit"
+          >
+            <span class="subscribe__text">Subscribe</span>
+          </button>
+        </form>
+        <span class="subscribe__agrement"
+          >By subscribing you agree to with our
+          <a
+            class="policy__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Privacy Policy"
+            >Privacy Policy</a
+          ></span
+        >
+      </div>
+    </div>
+    <div class="policy">
+      <ul class="policy__list">
+        <li class="policy__item">
+          <a
+            class="policy__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Privacy Policy"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="policy__item">
+          <a
+            class="policy__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Terms of Service"
+            href="#"
+            >Terms of Service</a
+          >
+        </li>
+        <li class="policy__item">
+          <a
+            class="policy__link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Cookies Settings"
+            href="#"
+            >Cookies Settings</a
+          >
+        </li>
+      </ul>
+      <p class="copyright">2022 FoodSta. All right reserved.</p>
+    </div>
+  </div>
+</footer>

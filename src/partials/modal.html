@@ -1,0 +1,60 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <svg class="modal__btn-icon" data-modal-close></svg>
+    <strong class="modal__title">Order Form</strong>
+    <form autocomplete="on">
+      <label class="modal__component" for="username">Name</label>
+      <input
+        class="modal__input-area"
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Input your name"
+        autofocus
+        required
+        minlength="3"
+        maxlength="25"
+      />
+      <div class="modal__warning">
+        <svg class="modal__icon-warning"></svg>
+        <p class="modal__hint">The name must be between 3 and 25 characters</p>
+      </div>
+      <label class="modal__component" for="phone_number">Phone number</label>
+      <input
+        class="modal__input-area"
+        type="tel"
+        id="phone_number"
+        name="phone_number"
+        placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        required
+        minlength="10"
+        maxlength="10"
+      />
+      <div class="modal__warning">
+        <svg class="modal__icon-warning"></svg>
+        <p class="modal__hint">
+          This phone must be in the format 099 000 00 00
+        </p>
+      </div>
+      <label class="modal__component" for="e-mail">E-mail</label>
+      <input
+        class="modal__input-area"
+        type="email"
+        id="e-mail"
+        name="email"
+        placeholder="example@gmail.com"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        required
+      />
+      <div class="modal__warning">
+        <svg class="modal__icon-warning"></svg>
+        <p class="modal__hint">Please enter a valid email address</p>
+      </div>
+      <div class="modal__button-submit">
+        <button type="submit" class="order-button order-button--white">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

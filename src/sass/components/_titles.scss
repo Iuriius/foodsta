@@ -1,0 +1,37 @@
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: left;
+  margin-bottom: 20px;
+
+  .favorites & {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.offerings__thumb .section__title {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 28px;
+  }
+}
+
+.section__description {
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: left;
+
+  .favorites & {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.17;
+  }
+}
