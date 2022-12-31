@@ -2,7 +2,11 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
+<<<<<<< HEAD
   "homepage": "https://iuriius.github.io/foodsta/",
+=======
+  "homepage": "https://iuriius.github.io/foodsta",
+>>>>>>> e31009c3d82a2a3e56109cc450f3114944a51ff3
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /foodsta/"
